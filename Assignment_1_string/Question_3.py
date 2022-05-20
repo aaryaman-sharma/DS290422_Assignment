@@ -3,8 +3,8 @@
 # Program to check if a string contains any special character.
 
 str1=input("Enter a string : ")
-aarya = str1.split()
-for i in aarya:
+special_char = str1.split()
+for i in special_char:
     for j in i:
         if j.isalnum() or j==" ":
             n=True
