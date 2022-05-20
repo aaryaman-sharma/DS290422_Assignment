@@ -1,17 +1,18 @@
 
+
 # Program to check if a string contains any special character.
 
-import re
-
-def find(string):
-    special_char=re.compile('[@_!$%^&*()<>?/\|}{~:]#')
-    
-    if special_char.search(string) == None:
-        return ("string is accepted")
-    else:
-        return ("string not accepted")
-   
-
-str1 = input("Enter string : ")
-print(str1)
-print(find(str1))
+str1=input("Enter a string : ")
+aarya = str1.split()
+for i in aarya:
+    for j in i:
+        if j.isalnum() or j==" ":
+            n=True
+        else:
+            n=False
+            print("This string is not accepted")
+            break
+    if n==False:
+        break
+if n==True:
+    print("String is accepted")
