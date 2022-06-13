@@ -11,7 +11,7 @@
 
 def square_num(n):
   return n * n
-  
+
 lst1 = [4, 5, 2, 9]
 
 print("Original List: ",lst1)
